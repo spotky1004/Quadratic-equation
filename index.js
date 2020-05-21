@@ -29,8 +29,9 @@ $(function (){
         outputStr = 'x = ' + root1.toFixed(3) + '(multiple root)'
       }
     } else {
-      rootc = (-b)/(2*a).toFixed(3);
-      outputStr = 'x = ' + (rootc) + ((checkFrom >= 0) ? '+' : '') + checkFrom.toFixed(3) + 'i or x = ' + (rootc) + ((checkFrom < 0) ? '+' : '') + (-checkFrom).toFixed(3) + 'i';
+      rootc = (-b)/(2*a);
+      rooti = Math.abs(checkFrom);
+      outputStr = 'x = ' + rootc.toFixed(3) + '+' + checkFrom.toFixed(3) + 'i or x = ' + rootc.toFixed(3) + (-checkFrom).toFixed(3) + 'i';
     }
     $('#rootWarp').html(function (index,html) {
       return outputStr;
