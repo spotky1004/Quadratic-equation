@@ -29,7 +29,8 @@ $(function (){
         outputStr = 'x = ' + root1.toFixed(3) + '(multiple root)'
       }
     } else {
-      outputStr = 'Has no root!';
+      rootc = (-b)/(2*a).toFixed(3);
+      outputStr = 'x = ' + (rootc) + ((checkFrom >= 0) ? '+' : '') + checkFrom.toFixed(3) + 'i or x = ' + (rootc) + ((checkFrom < 0) ? '+' : '') + (-checkFrom).toFixed(3) + 'i';
     }
     $('#rootWarp').html(function (index,html) {
       return outputStr;
