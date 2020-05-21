@@ -8,7 +8,9 @@ $(function (){
       b = Number($('input#const2').val());
       c = Number($('input#const1').val());
       checkFrom = (b**2)-(4*a*c);
-      if (checkFrom >= 0) {
+      if (a == 0) {
+        outputStr = "a can't be 0";
+      } else if (checkFrom >= 0) {
         root1 = (-b+Math.sqrt(checkFrom))/(2*a);
         root2 = (-b+Math.sqrt(checkFrom))/(2*a);
         if (root1 != root2) {
