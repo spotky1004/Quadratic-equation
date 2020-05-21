@@ -9,8 +9,8 @@ $(function (){
       c = Number($('input#const1').val());
       checkFrom = (b**2)-(4*a*c);
       if (checkFrom >= 0) {
-        root1 = (-b+Math.sqrt(checkFrom))/2*a;
-        root2 = (-b+Math.sqrt(checkFrom))/2*a;
+        root1 = (-b+Math.sqrt(checkFrom))/(2*a);
+        root2 = (-b+Math.sqrt(checkFrom))/(2*a);
         outputStr = 'x = ' + root1.toFixed(3) + ' or x = ' + root2.toFixed(3);
       } else {
         outputStr = 'Has no root!';
