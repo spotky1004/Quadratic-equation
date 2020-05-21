@@ -31,7 +31,7 @@ $(function (){
     } else {
       rootc = (-b)/(2*a);
       rooti = Math.abs(checkFrom);
-      outputStr = 'x = ' + rootc.toFixed(3) + '+' + checkFrom.toFixed(3) + 'i or x = ' + rootc.toFixed(3) + (-checkFrom).toFixed(3) + 'i';
+      outputStr = 'x = ' + rootc.toFixed(3) + '+' + rooti.toFixed(3) + 'i or x = ' + rootc.toFixed(3) + (-rooti).toFixed(3) + 'i';
     }
     $('#rootWarp').html(function (index,html) {
       return outputStr;
