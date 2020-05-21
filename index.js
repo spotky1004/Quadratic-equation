@@ -13,8 +13,13 @@ $(function (){
       root1 = 0;
       outputStr = 'x = ' + root1.toFixed(3);
     } else if (a == 0) {
-      root1 = -1*(c/b);
-      outputStr = 'x = ' + root1.toFixed(3);
+      if (b != 0) {
+        root1 = -1*(c/b);
+        outputStr = 'x = ' + root1.toFixed(3);
+      } else {
+        root1 = 0;
+        outputStr = 'x = ' + root1.toFixed(3);
+      }
     } else if (checkFrom >= 0) {
       root1 = (-b+Math.sqrt(checkFrom))/(2*a);
       root2 = (-b+Math.sqrt(checkFrom))/(2*a);
