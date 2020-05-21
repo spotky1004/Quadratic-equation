@@ -30,7 +30,7 @@ $(function (){
       }
     } else {
       rootc = (-b)/(2*a);
-      rooti = Math.abs(checkFrom);
+      rooti = Math.sqrt(Math.abs(checkFrom))/((2*a));
       outputStr = 'x = ' + rootc.toFixed(3) + '+' + rooti.toFixed(3) + 'i or x = ' + rootc.toFixed(3) + (-rooti).toFixed(3) + 'i';
     }
     $('#rootWarp').html(function (index,html) {
