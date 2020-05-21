@@ -11,7 +11,11 @@ $(function (){
       if (checkFrom >= 0) {
         root1 = (-b+Math.sqrt(checkFrom))/(2*a);
         root2 = (-b+Math.sqrt(checkFrom))/(2*a);
-        outputStr = 'x = ' + root1.toFixed(3) + ' or x = ' + root2.toFixed(3);
+        if (root1 != root2) {
+          outputStr = 'x = ' + root1.toFixed(3) + ' or x = ' + root2.toFixed(3);
+        } else {
+          outputStr = 'x = ' + root1.toFixed(3) + '(multiple root)'
+        }
       } else {
         outputStr = 'Has no root!';
       }
