@@ -28,6 +28,10 @@ body {
   color: #fff;
   text-shadow: 0 0 5px #fff;
 }
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .x {
   height: 10vh;
   width: 20vh;
