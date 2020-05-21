@@ -1,4 +1,8 @@
 $(function (){
+  aBef = 0;
+  bBef = 0;
+  cBef = 0;
+
   $('input').keypress(function (event) {
     if (event.which && (event.which <= 47 || event.which >= 58) && event.which != 8) {
       event.preventDefault();
@@ -36,5 +40,14 @@ $(function (){
     $('#rootWarp').html(function (index,html) {
       return outputStr;
     });
+    if (aBef != a || bBef != b || cBef != c) {
+      $('#rootWarp').removeClass('pulse');
+      setTimeout( function (){
+        $('#rootWarp').addClass('pulse');
+      }, 10);
+    }
+    aBef = a;
+    bBef = b;
+    cBef = c;
   }, 10);
 });

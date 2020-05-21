@@ -63,3 +63,17 @@ body {
   color: #fff;
   text-shadow: 0 0 5px #fff;
 }
+.pulse {
+  animation-duration: 2s;
+  animation-name: pulseSet;
+}
+@keyframes pulseSet {
+  from {
+    color: #bac6d9;
+    text-shadow: 0 0 5px #bac6d9;
+  }
+  to {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+  }
+}
