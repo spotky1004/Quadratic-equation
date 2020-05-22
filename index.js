@@ -26,7 +26,7 @@ $(function (){
       }
     } else if (checkFrom >= 0) {
       root1 = (-b+Math.sqrt(checkFrom))/(2*a);
-      root2 = (-b+Math.sqrt(checkFrom))/(2*a);
+      root2 = (-b-Math.sqrt(checkFrom))/(2*a);
       if (root1 != root2) {
         outputStr = 'x = ' + root1.toFixed(5) + ' or x = ' + root2.toFixed(5);
       } else {
